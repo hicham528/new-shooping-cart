@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Image Lightbox | CodingNepal</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>shooping page</h1>
+        <div class="shoopin_icon">
+          <i class="fa-solid fa-bag-shopping" id="open_shoopin_cart"></i>
+          <span class="quantity_value">0</span>
+        </div>
+      </div>
+      <div class="products_container">
+        <div class="products_content">
+          <img src="images/image-baklava-desktop.jpg" alt="" />
+          <div class="btn_content">
+            <button class="add_button">add to cart</button>
+          </div>
+          <div class="details">
+            <h4 class="category">food</h4>
+            <h3 class="name_products">appel</h3>
+            <h2 class="price">$20.00</h2>
+          </div>
+        </div>
+      </div>
+      <div class="shoop_cart">
+        <h1 class="title_cart_shooping"></h1>
+        <div class="shoop_container">
+          <div class="shoop_content">
+            <img src="images/image-baklava-desktop.jpg" alt="" />
+            <div class="text_shoop">
+              <h3 class="name_shoop">banana</h3>
+              <div class="shooop_price_and_quantity">
+                <h5 class="quantity_shoop">20Kg</h5>
+                <h5 class="price_shoop">120 DH</h5>
+
+                <h5 class="totale_shoop">2000DH</h5>
+              </div>
+            </div>
+            <i class="fa-solid fa-xmark"></i>
+          </div>
+        
+        </div>
+        <div class="totale_price_shoopin">
+          <h3>totale:</h3>
+          <h2 class="totale_shoop_price">3000DH</h2>
+        </div>
+        <div class="buttons">
+          <a href="#" class="add_to_order">add to order cart</a>
+          <a href="#" class="close_cart">close cart</a>
+        </div>
+      </div>
+    </div>
+    <div class="order_container">
+      <div class="finel_order">
+        <i class="fa-solid fa-xmark" id="close_order_cart"></i>
+        <img src="images/icon-order-confirmed.svg" alt="">
+        <h1>order confirmed</h1>
+        <p>we hope you enjoy your food!</p>
+        <div class="finel_order_container">
+          <div class="only_order">
+            <div class="new-details">
+              <img src="images/image-baklava-desktop.jpg" alt="">
+              <div class="textOrder">
+                <h3>classic tranuis</h3>
+                <div class="details_price">
+                  <p class="quantity">1x</p>
+                  <h4 class="price">500.00dh</h4>
+                </div>
+              </div>
+            </div>
+            <h2>150dh</h2>
+          </div>
+       
+        </div>
+        <div class="order_totale">
+          <p>totale:</p>
+          <h1 class="totale_order">1200dh</h1>
+        </div>
+        <button class="start_new_order">start new order</button>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
